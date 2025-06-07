@@ -16,9 +16,19 @@ def get_weather(city):
         current_temp_f = ((current_temp_c * 1.8) + 32) 
 
 
+        if current_temp_c > 22:
+            icon = " "
+        elif current_temp_c > 15:
+            icon = " "
+        elif current_temp_c > 10:
+            icon = " "
+        elif current_temp_c > 5:
+            icon = " "
+        else:
+            icon = " " 
 
         #OUTPUT FORMAT CELSIUS
-        return " " + str(current_temp_c) + "°C"
+        return  icon + str(current_temp_c) + "°C"
 
         #OUTPUT FORMAT FARENHEIT
         #return " " + str(current_temp_f) + "°F"
