@@ -1,5 +1,6 @@
 import requests
 from geopy.geocoders import Nominatim
+
 def get_weather(city):
     #GET LOCATION COORDINATES
     nomAgent = Nominatim(user_agent="location")
@@ -11,10 +12,17 @@ def get_weather(city):
 
     if response.status_code == 200:
         data = response.json()
-        current_temp = data["current"]["temperature_2m"] 
+        current_temp_c = data["current"]["temperature_2m"] 
+        current_temp_f = ((current_temp_c * 1.8) + 32) 
 
-        #OUTPUT FORMAT
-        return " " + str(current_temp) + "°C"
+
+
+        #OUTPUT FORMAT CELSIUS
+        return " " + str(current_temp_c) + "°C"
+
+        #OUTPUT FORMAT FARENHEIT
+        #return " " + str(current_temp_f) + "°F"
+    
     else:
         return None
     
