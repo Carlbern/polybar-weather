@@ -31,7 +31,7 @@ def get_weather(city):
         return  icon + str(current_temp_c) + "°C"
 
         #OUTPUT FORMAT FARENHEIT
-        #return " " + str(current_temp_f) + "°F"
+        #return icon + str(current_temp_f) + "°F"
     
     else:
         return None
