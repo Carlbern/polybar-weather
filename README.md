@@ -6,7 +6,7 @@ The default location is Paris, France.
 
 To change location, simply change the input of the function on the last line.
 
-To change from celsius to farenhet, comment out the line with "OUTPUT FORMAT CELSIUS" and uncomment the "OUTPUT FORMAT FARENHEIT"
+To change from celsius to farenheit, comment out the line with "OUTPUT FORMAT CELSIUS" and uncomment the "OUTPUT FORMAT FARENHEIT"
 
 ### Dependencies
 
